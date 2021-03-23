@@ -1,4 +1,4 @@
-from rezerv_copy_vk.rezerv_class import rezerv_vk
+from rezerv_copy_vk.rezerv_class import Rezerv_vk
 
 
 if __name__ == '__main__':
@@ -7,5 +7,5 @@ if __name__ == '__main__':
     ya_token = input('Введите токен от яндекс.диск: ')
     count = input('Введите количество фотографий для загрузки: ')
 
-    rezerv = rezerv_vk(user_id, ya_token, count)
+    rezerv = Rezerv_vk(user_id, ya_token, count)
     rezerv.rezerv_to_ya()

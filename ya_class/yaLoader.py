@@ -2,7 +2,7 @@ import requests
 import os
 
 
-class yaUpLoader:
+class YaUpLoader:
     def __init__(self, token):
         self.token = token
         self.url = 'https://cloud-api.yandex.net:443/v1/disk/'

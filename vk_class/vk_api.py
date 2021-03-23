@@ -3,7 +3,7 @@ from pprint import pprint
 import time
 from progress.bar import ChargingBar
 
-class vk_api:
+class Vk_api:
     def __init__(self, token, version = None):
         self.token = token
         self.version = version

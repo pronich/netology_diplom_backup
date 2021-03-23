@@ -1,17 +1,17 @@
-from ya_class.yaLoader import yaUpLoader
-from vk_class.vk_api import vk_api
+from ya_class.yaLoader import YaUpLoader
+from vk_class.vk_api import Vk_api
 import requests
 from progress.bar import ChargingBar
 import os
 from pprint import pprint
 
-class rezerv_vk:
+class Rezerv_vk:
     def __init__(self, user_id, ya_token, count):
         self.ya_token = ya_token
         self.user_id = user_id
         self.count = count
-        self.ya_loader = yaUpLoader(self.ya_token)
-        self.vkapi = vk_api(self._get_vk_token())
+        self.ya_loader = YaUpLoader(self.ya_token)
+        self.vkapi = Vk_api(self._get_vk_token())
 
     def _get_vk_token(self):
         os_path = os.getcwd()
